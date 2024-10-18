@@ -67,6 +67,9 @@ void accountCreate(User u);
 double interest(double amount, char *AccountType);
 bool dbFetchAccountDetails(User u, int Accntid, Record *r, double *balance);
 void accountDetails(User u);
+bool dbUpdateAccountDetails(User u, int accountId, Record AccInfo, int option);
+void accountUpdateInfo(User u);
+void dbUpdateAccountInformation(int accountId, const char *new_country, int new_phone, int option);
 
 bool isdate(Date date);
 void trimlinechar(char *str);

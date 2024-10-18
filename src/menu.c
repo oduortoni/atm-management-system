@@ -65,9 +65,9 @@ void mainMenu(User u) {
             case 1:
                 accountCreate(u);
               break;
-            // case 2:
-            //     accountUpdateInfo(u);
-            //     break;
+            case 2:
+                accountUpdateInfo(u);
+                break;
             case 3:
                 accountDetails(u);
                 break;
@@ -83,9 +83,9 @@ void mainMenu(User u) {
             // case 7:
             //     accountTransfer(u);
             //     break;
-            // case 8:
-            //     system("clear");
-            //     exit(EXIT_SUCCESS);
+            case 8:
+                system("clear");
+                exit(EXIT_SUCCESS);
             default:
                 printf("\n\n\t\tInvalid option. Please try again.\n");
                 break;
