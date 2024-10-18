@@ -20,7 +20,7 @@ void initMenu(User *u) {
                 if (strcmp(u->password, dbRetrievePassword(*u)) == 0)
                 {
                     printf("\n\t\t[Success login] Password Match!\n\n");
-                    r = 1; // Login successful
+                    r = 1; // login success, exit loop on next iteration
                 }
                 else
                 {
@@ -30,7 +30,7 @@ void initMenu(User *u) {
              break;
             case 2:
                 registerMenu(*u);
-                r = 1; // Registration successful
+                r = 1; // registration success, exit loop on next iteration
              break;
             case 3:
                 system("clear");
@@ -71,9 +71,9 @@ void mainMenu(User u) {
             case 3:
                 accountDetails(u);
                 break;
-            // case 4:
-            //     accountList(u);
-            //     break;
+            case 4:
+                accountList(u);
+                break;
             // case 5:
             //     accountMakeTransaction(u);
             //     break;
