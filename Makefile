@@ -23,7 +23,7 @@ objects/register.o:
 	cc -c src/users/register.c -o objects/register.o
 
 objects/sqhelpers.o:
-	cc -c src/sqlite/helpers.c -o objects/helpers.o
+	cc -c src/sqlite/helpers.c -o objects/sqhelpers.o
 
 objects/sqlite3.o:
 	cc -c src/sqlite/sqlite3.c -o objects/sqlite3.o

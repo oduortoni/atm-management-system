@@ -40,8 +40,7 @@ sqlite3 *sqliteHandler(const char *dbName) {
 }
 
 // execute non effectingrequests
-void sqliteExecute(sqlite3 *db, const char *sql)
-{
+void sqliteExecute(sqlite3 *db, const char *sql) {
     sqlite3_stmt *stmt = NULL;
     int succes;
 
@@ -59,8 +58,6 @@ void sqliteExecute(sqlite3 *db, const char *sql)
 
     // finalize a statement
     sqlite3_finalize(stmt);
-
-    return;
 }
 
 // centralized error handling

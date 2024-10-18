@@ -63,6 +63,6 @@ bool isalphabet(char *str);
 bool isleapyear(int year);
 bool isstring(const char *str, size_t n);
 
-void die()
+void die();
 
 #endif  // _HEADER_H
