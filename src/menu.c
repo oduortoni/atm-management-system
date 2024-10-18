@@ -68,9 +68,9 @@ void mainMenu(User u) {
             // case 2:
             //     accountUpdateInfo(u);
             //     break;
-            // case 3:
-            //     accountDetails(u);
-            //     break;
+            case 3:
+                accountDetails(u);
+                break;
             // case 4:
             //     accountList(u);
             //     break;

@@ -64,6 +64,9 @@ bool dbAccountExistsInDatabase(int accountNbr);
 double accountBalance(int userId, int accnt_id, User u);
 bool dbAccountCreate(User u, Record r);
 void accountCreate(User u);
+double interest(double amount, char *AccountType);
+bool dbFetchAccountDetails(User u, int Accntid, Record *r, double *balance);
+void accountDetails(User u);
 
 bool isdate(Date date);
 void trimlinechar(char *str);
