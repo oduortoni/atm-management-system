@@ -44,9 +44,9 @@ typedef struct User User;
 extern const int maxinputlen;
 extern const char *dbpath;
 
-void registerMenu(User u);
 void initMenu(User *u);
 void mainMenu(User u);
+void registerMenu(User u);
 void loginMenu(char a[50], char pass[50]);
 
 
@@ -75,6 +75,10 @@ void accountDelete(User u);
 bool dbAccountDelete(int userId, int accountId);
 void accountTransfer(User u);
 void dbaccountTransfer(int user_id, int accnt_id, char *name);
+bool accountAllowsTransactions(int userId, int accnt_id, User u);
+void dbRecordTransaction(int accnt_id, char *transaction_type, double amount);
+void accountMakeTransaction(User u);
+void dbUpdateAccntBalance(int user_id, int accnt_id, double balance, int option);
 
 bool isdate(Date date);
 void trimlinechar(char *str);
