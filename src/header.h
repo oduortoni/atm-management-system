@@ -54,6 +54,11 @@ void sqliteExecute(sqlite3 *db, const char *sql);
 void sqliteError(sqlite3 *db, const char *message, sqlite3_stmt *stmt);
 int sqliteInit(char *dbname);
 
+bool dbUsernameExists(const char *username);
+const char *dbRetrievePassword(User u);
+char *dbRetrieveUserName(int user_id);
+int dbRetrieveUserId(const char *username);
+
 bool isdate(Date date);
 void trimlinechar(char *str);
 bool ispositive(const char *str);
