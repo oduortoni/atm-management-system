@@ -44,10 +44,11 @@ typedef struct User User;
 extern const int maxinputlen;
 extern const char *dbpath;
 
-void loginMenu(char a[50], char pass[50]);
 void registerMenu(User u);
-void mainMenu(User u);
 void initMenu(User *u);
+void mainMenu(User u);
+void loginMenu(char a[50], char pass[50]);
+
 
 sqlite3 *sqliteHandler(const char *dbName);
 void sqliteExecute(sqlite3 *db, const char *sql);

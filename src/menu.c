@@ -1,7 +1,6 @@
 #include "header.h"
 
-void initMenu(User *u)
-{
+void initMenu(User *u) {
     int option;
     int r = 0;
     system("clear");
@@ -13,45 +12,40 @@ void initMenu(User *u)
     printf("\n\t\t[3]- Exit\n");
     printf("\n\t\t");
 
-    while (!r)
-    {
+    while (!r) {
         option = input_number();
-        switch (option)
-        {
-        // case 1:
-        //     loginMenu(u->name, u->password);
-        //     if (strcmp(u->password, dbRetrievePassword(*u)) == 0)
-        //     {
-        //         printf("\n\t\t[Success login] Password Match!\n\n");
-        //         r = 1; // Login successful
-        //     }
-        //     else
-        //     {
-        //         printf("\n\t\tWrong password or Username\n\n");
-        //         exit(EXIT_FAILURE);
-        //     }
-        //     break;
-        case 2:
-            registerMenu(*u);
-            r = 1; // Registration successful
-            break;
-        case 3:
-            system("clear");
-            exit(EXIT_SUCCESS);
-        default:
-            printf("\n\t\tInsert a valid operation!\n");
-            break;
+        switch (option) {
+            case 1:
+                loginMenu(u->name, u->password);
+                if (strcmp(u->password, dbRetrievePassword(*u)) == 0)
+                {
+                    printf("\n\t\t[Success login] Password Match!\n\n");
+                    r = 1; // Login successful
+                }
+                else
+                {
+                    printf("\n\t\tWrong password or Username\n\n");
+                    exit(EXIT_FAILURE);
+                }
+             break;
+            case 2:
+                registerMenu(*u);
+                r = 1; // Registration successful
+             break;
+            case 3:
+                system("clear");
+                exit(EXIT_SUCCESS);
+            default:
+                printf("\n\t\tInsert a valid operation!\n");
+             break;
         }
     }
-}
+};
 
-
-void mainMenu(User u)
-{
+void mainMenu(User u) {
     int choice;
 
-    while (1)
-    {
+    while (1) {
         system("clear");
         printf("\n\n\t\t======= >ATM< =======\n\n");
         printf("\n\t\t-->> Feel free to choose one of the options below <<--\n");
@@ -67,35 +61,34 @@ void mainMenu(User u)
 
         choice = input_number();
 
-        switch (choice)
-        {
-        // case 1:
-        //     accountCreate(u);
-        //     break;
-        // case 2:
-        //     accountUpdateInfo(u);
-        //     break;
-        // case 3:
-        //     accountDetails(u);
-        //     break;
-        // case 4:
-        //     accountList(u);
-        //     break;
-        // case 5:
-        //     accountMakeTransaction(u);
-        //     break;
-        // case 6:
-        //     accountDelete(u);
-        //     break;
-        // case 7:
-        //     accountTransfer(u);
-        //     break;
-        // case 8:
-        //     system("clear");
-        //     exit(EXIT_SUCCESS);
-        default:
-            printf("\n\n\t\tInvalid option. Please try again.\n");
-            break;
+        switch (choice) {
+            // case 1:
+            //     accountCreate(u);
+            //     break;
+            // case 2:
+            //     accountUpdateInfo(u);
+            //     break;
+            // case 3:
+            //     accountDetails(u);
+            //     break;
+            // case 4:
+            //     accountList(u);
+            //     break;
+            // case 5:
+            //     accountMakeTransaction(u);
+            //     break;
+            // case 6:
+            //     accountDelete(u);
+            //     break;
+            // case 7:
+            //     accountTransfer(u);
+            //     break;
+            // case 8:
+            //     system("clear");
+            //     exit(EXIT_SUCCESS);
+            default:
+                printf("\n\n\t\tInvalid option. Please try again.\n");
+                break;
         }
     }
 }
