@@ -71,6 +71,8 @@ bool dbUpdateAccountDetails(User u, int accountId, Record AccInfo, int option);
 void accountUpdateInfo(User u);
 void dbUpdateAccountInformation(int accountId, const char *new_country, int new_phone, int option);
 void accountList(User u);
+void accountDelete(User u);
+bool dbAccountDelete(int userId, int accountId);
 
 bool isdate(Date date);
 void trimlinechar(char *str);

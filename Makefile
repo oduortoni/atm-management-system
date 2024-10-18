@@ -1,5 +1,5 @@
 norecompile = objects/sqlite3.o
-objects = objects/main.o objects/input.o objects/utils.o objects/accounts.o objects/details.o objects/constants.o objects/menu.o objects/system.o objects/users.o objects/register.o objects/login.o objects/sqhelpers.o objects/create.o objects/update.o objects/list.o
+objects = objects/main.o objects/input.o objects/utils.o objects/accounts.o objects/details.o objects/constants.o objects/menu.o objects/system.o objects/users.o objects/register.o objects/login.o objects/sqhelpers.o objects/create.o objects/update.o objects/list.o objects/delete.o
 
 atm: $(objects) $(norecompile)
 	cc $(objects) $(norecompile) -o atm 
@@ -45,6 +45,9 @@ objects/update.o:
 
 objects/list.o:
 	cc -c src/accounts/list.c -o objects/list.o
+
+objects/delete.o:
+	cc -c src/accounts/delete.c -o objects/delete.o
 
 objects/sqhelpers.o:
 	cc -c src/sqlite/helpers.c -o objects/sqhelpers.o

@@ -77,9 +77,9 @@ void mainMenu(User u) {
             // case 5:
             //     accountMakeTransaction(u);
             //     break;
-            // case 6:
-            //     accountDelete(u);
-            //     break;
+            case 6:
+                accountDelete(u);
+                break;
             // case 7:
             //     accountTransfer(u);
             //     break;
