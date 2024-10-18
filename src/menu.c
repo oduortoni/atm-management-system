@@ -80,9 +80,9 @@ void mainMenu(User u) {
             case 6:
                 accountDelete(u);
                 break;
-            // case 7:
-            //     accountTransfer(u);
-            //     break;
+            case 7:
+                accountTransfer(u);
+                break;
             case 8:
                 system("clear");
                 exit(EXIT_SUCCESS);

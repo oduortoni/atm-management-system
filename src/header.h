@@ -73,6 +73,8 @@ void dbUpdateAccountInformation(int accountId, const char *new_country, int new_
 void accountList(User u);
 void accountDelete(User u);
 bool dbAccountDelete(int userId, int accountId);
+void accountTransfer(User u);
+void dbaccountTransfer(int user_id, int accnt_id, char *name);
 
 bool isdate(Date date);
 void trimlinechar(char *str);
