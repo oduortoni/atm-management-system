@@ -62,9 +62,9 @@ void mainMenu(User u) {
         choice = input_number();
 
         switch (choice) {
-            // case 1:
-            //     accountCreate(u);
-            //     break;
+            case 1:
+                accountCreate(u);
+              break;
             // case 2:
             //     accountUpdateInfo(u);
             //     break;

@@ -59,6 +59,11 @@ bool dbUsernameExists(const char *username);
 const char *dbRetrievePassword(User u);
 char *dbRetrieveUserName(int user_id);
 int dbRetrieveUserId(const char *username);
+bool dbAccountExistsForUser(int user_id, int account_number);
+bool dbAccountExistsInDatabase(int accountNbr);
+double accountBalance(int userId, int accnt_id, User u);
+bool dbAccountCreate(User u, Record r);
+void accountCreate(User u);
 
 bool isdate(Date date);
 void trimlinechar(char *str);
