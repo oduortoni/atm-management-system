@@ -1,0 +1,5 @@
+objects/*.o
+atm
+src/sqlite/sqlite3.c
+src/sqlite/sqlite3.h
+data/atm.db
