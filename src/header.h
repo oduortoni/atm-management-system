@@ -49,7 +49,6 @@ void registerMenu(User u);
 void mainMenu(User u);
 void initMenu(User *u);
 
-// database functions
 sqlite3 *sqliteHandler(const char *dbName);
 void sqliteExecute(sqlite3 *db, const char *sql);
 void sqliteError(sqlite3 *db, const char *message, sqlite3_stmt *stmt);
@@ -63,6 +62,14 @@ bool isalphabet(char *str);
 bool isleapyear(int year);
 bool isstring(const char *str, size_t n);
 
+void Return(User u);
+void success(User u);
+void StayOrReturn(int notGood, void (*f)(User), User u);
 void die();
+
+void input_hide();
+void input_show();
+int input_number();
+void input_string(User u, char *input);
 
 #endif  // _HEADER_H

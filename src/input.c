@@ -50,8 +50,7 @@ int input_number() {
 }
 // sets the echo mode to off
 // thereby hiding user input as they type
-void input_hide()
-{
+void input_hide() {
 	struct termios flags;
 	tcgetattr(fileno(stdin), &flags);
 	flags.c_lflag &= ~ECHO;
@@ -59,8 +58,7 @@ void input_hide()
 }
 // sets the echo mode to on
 // thereby showing user input as they type
-void input_show()
-{
+void input_show() {
 	struct termios flags;
 	tcgetattr(fileno(stdin), &flags);
 	flags.c_lflag |= ECHO;

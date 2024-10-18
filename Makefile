@@ -10,6 +10,9 @@ objects/main.o:
 objects/input.o:
 	cc -c src/input.c -o objects/input.o
 
+objects/utils.o:
+	cc -c src/utils.c -o objects/utils.o
+
 objects/menu.o:
 	cc -c src/menu.c -o objects/menu.o
 
