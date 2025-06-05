@@ -52,7 +52,6 @@ A pseudo-ATM system written in C, intended to automate core banking operations. 
 ```
 atm-management-system/
 ├── src/         # C source files
-├── include/     # Header files (optional)
 ├── Makefile     # Build instructions & documentation
 ├── bin/         # Compiled output binary
 ```
