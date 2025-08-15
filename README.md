@@ -2,32 +2,32 @@
 
 A pseudo-ATM system written in C, intended to automate core banking operations. This system simulates real-world banking workflows such as account creation, fund transfers, deposits, and more.
 
-📍 **Project URL:** https://github.com/oduortoni/atm-management-system
+ **Project URL:** https://github.com/oduortoni/atm-management-system
 
 ---
 
-## ✨ Features
+## Features
 
-- ✅ Create new accounts
-- ✏️ Edit account details
-- 💰 Deposit funds
-- 🔁 Transfer funds between user accounts
-- ❌ Delete an account
-- 🔍 Account types:
+-  Create new accounts
+-  Edit account details
+-  Deposit funds
+-  Transfer funds between user accounts
+-  Delete an account
+-  Account types:
   - Current
   - Fixed
   - Savings
 
 ---
 
-## 🛠️ Technologies Used
+##   Technologies Used
 
 - **Language:** C
 - **Build System:** Make (Makefile)
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. **Clone the repository:**
    ```bash
@@ -47,7 +47,7 @@ A pseudo-ATM system written in C, intended to automate core banking operations. 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 atm-management-system/
@@ -58,7 +58,7 @@ atm-management-system/
 
 ---
 
-## 🧪 Sample Workflow
+##  Sample Workflow
 
 - Create an Account
 - Deposit Funds
@@ -68,7 +68,7 @@ atm-management-system/
 
 ---
 
-## 🤝 Collaboration
+##  Collaboration
 
 Contributions and collaboration are highly encouraged!
 
@@ -91,12 +91,12 @@ Contributions and collaboration are highly encouraged!
 
 ---
 
-## 📜 License
+##  License
 
 MIT License
 
 ---
 
-## 👤 Author
+##  Author
 
 [@oduortoni](https://github.com/oduortoni)
